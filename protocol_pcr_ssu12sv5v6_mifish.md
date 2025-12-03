@@ -58,10 +58,27 @@ annealingTemp: 69.5;50
 pcr_cycles: 13;35
 pcr_analysis_software: not provided
 pcr_method_additional: not provided
+barcoding_pcr_appr: two-step PCR
+pcr2_thermocycler: not provided
+pcr2_amplificationReactionVolume: 15
+pcr2_commercial_mm: 2X Dream Taq Master Mix (K1920)
+pcr2_custom_mm: not applicable
+pcr2_dna_vol: 1
+pcr2_cond: initial denaturation:95_3;denaturation:95_0.25;annealing:60_0.5;elongation:72_1.5;final elongation:72_180;11
+pcr2_annealingTemp: 60
+pcr2_cycles: 11
+pcr2_analysis_software: not applicable
+pcr2_method_additional: not applicable
 sequencing_location: Michigan State University Research Technology Support Facility Genomics Core
 platform: ILLUMINA
 instrument: Illumina MiSeq [OBI:0002003]
 seq_kit: MiSeq Reagent Kit v2 (500 cycles)
+lib_layout: paired
+adapter_forward: ACACTGACGACATGGTTCTACA
+adapter_reverse: TACGGTAGCAGAGACTTGGTCT
+lib_screen: normalized using Invitrogen SequalPrep
+lib_conc_meth: quantified using Qubit dsDNA HS, Agilent 4200 TapeStation HS DNA1000 and Invitrogen Collibri Library Quantification qPCR
+seq_method_additional: not applicable
 ---
 
 # NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish)
