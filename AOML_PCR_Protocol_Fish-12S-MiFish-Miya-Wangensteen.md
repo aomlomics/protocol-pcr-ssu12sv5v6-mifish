@@ -81,7 +81,7 @@ lib_conc_meth: quantified using Qubit dsDNA HS, Agilent 4200 TapeStation HS DNA1
 seq_method_additional: not applicable
 ---
 
-# NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish)
+# NOAA/AOML PCR Protocol 12S rRNA MiFish (Miya-Wangensteen)
 
 ## PROTOCOL INFORMATION
 
