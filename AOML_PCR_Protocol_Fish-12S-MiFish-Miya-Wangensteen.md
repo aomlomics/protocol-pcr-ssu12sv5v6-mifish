@@ -64,7 +64,7 @@ pcr2_amplificationReactionVolume: 15
 pcr2_commercial_mm: 2X Dream Taq Master Mix (K1920)
 pcr2_custom_mm: not applicable
 pcr2_dna_vol: 1
-pcr2_cond: initial denaturation:95_3;denaturation:95_0.25;annealing:60_0.5;elongation:72_1.5;final elongation:72_180;11
+pcr2_cond: initial denaturation:95_3;denaturation:95_0.25;annealing:60_0.5;elongation:72_1.5;final elongation:72_3;11
 pcr2_annealingTemp: 60
 pcr2_cycles: 11
 pcr2_analysis_software: not applicable
