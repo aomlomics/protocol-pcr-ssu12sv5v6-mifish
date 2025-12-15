@@ -17,7 +17,7 @@ personnel_required: 1
 language: en
 issued: 2024-08-22
 audience: scientists
-publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
+publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory
 hasVersion: 1
 license: CC0 1.0 Universal
 maturity level: mature
