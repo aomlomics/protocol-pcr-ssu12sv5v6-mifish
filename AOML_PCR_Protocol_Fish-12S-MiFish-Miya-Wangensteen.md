@@ -26,17 +26,17 @@ maturity level: mature
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
 amplificationReactionVolume: 25
-assay_name: ssu12sv5v6_mifish
+assay_name: Fish-12S-MiFish-Miya-Wangensteen
 assay_validation: not provided
-targetTaxonomicAssay: 12S rRNA gene sequencing ing the V5-V6 region using primers MiFish-F V2 and MiFish-R
-TaxonomicScope: fishes
-target_gene: 12S rRNA
+targetTaxonomicAssay: Actinopterygii
+targetTaxonomicScope: "Also captures non-target: Vertebrates, bacteria"
+target_gene: 12S rRNA (SSU mitochondria)
 target_subfragment: V5-V6
 ampliconSize: 163-185
 pcr_primer_forward: GCCGGTAAAACTCGTGCCAGC
 pcr_primer_reverse: CATAGTGGGGTATCTAATCCCAGTTTG
-pcr_primer_name_forward: 12S MiFish_U F Fluidigm V2
-pcr_primer_name_reverse: 12S MiFish_U R Fluidigm
+pcr_primer_name_forward: MiFish-U-F-V2
+pcr_primer_name_reverse: MiFish-U-R
 pcr_primer_reference_forward: http://dx.doi.org/10.1098/rsos.150088
 pcr_primer_reference_reverse: http://dx.doi.org/10.1098/rsos.150088
 pcr_primer_vol_forward: 1.0
