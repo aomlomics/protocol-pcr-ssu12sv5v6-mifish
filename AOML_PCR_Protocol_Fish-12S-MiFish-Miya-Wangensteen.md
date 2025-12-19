@@ -69,16 +69,7 @@ pcr2_annealingTemp: 60
 pcr2_cycles: 11
 pcr2_analysis_software: not applicable
 pcr2_method_additional: not applicable
-sequencing_location: Michigan State University Research Technology Support Facility Genomics Core
-platform: ILLUMINA
-instrument: Illumina MiSeq [OBI:0002003]
-seq_kit: MiSeq Reagent Kit v2 (500 cycles)
-lib_layout: paired
-adapter_forward: ACACTGACGACATGGTTCTACA
-adapter_reverse: TACGGTAGCAGAGACTTGGTCT
-lib_screen: normalized using Invitrogen SequalPrep
-lib_conc_meth: quantified using Qubit dsDNA HS, Agilent 4200 TapeStation HS DNA1000 and Invitrogen Collibri Library Quantification qPCR
-seq_method_additional: not applicable
+
 ---
 
 # NOAA/AOML PCR Protocol 12S rRNA MiFish (Miya-Wangensteen)
