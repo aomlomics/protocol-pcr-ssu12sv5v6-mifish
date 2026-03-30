@@ -25,7 +25,7 @@ maturity level: mature
 # FAIRe terms
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
-amplificationReactionVolume: 25
+amplificationReactionVolume: 13
 assay_name: Fish-12S-MiFish-U-Miya-Sales
 assay_validation: not provided
 targetTaxonomicAssay: Actinopterygii
@@ -49,7 +49,7 @@ probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
 commercial_mm: AmpliTaq Gold 360 Master Mix
-custom_mm: PCR reactions were run in 25 uL reaction volumes, with 1.0 uL of DNA, 12.5 uL of AmpliTaq Gold, 9.5 uL of water, and 1.0 uL of each primer (10 uM).
+custom_mm: PCR reactions were run in 13 µL reaction volumes, with 1.0 µL of DNA, 6.25 µL of AmpliTaq Gold, 2.71 µL of water, 1.04 µL BSA (0.08 mg/mL), and 1.0 µL of each primer (10 µM).
 pcr_dna_vol: 1.0
 pcr_rep: 1.0
 nucl_acid_amp: https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v
@@ -126,6 +126,7 @@ pcr2_method_additional: not applicable
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML front matter |
 | 1.1.1 | 2024-12-15 | Updated YAML front matter |
 | 1.1.2 | 2026-03-30 | Updated assay name |
+| 1.2.0 | 2026-03-30 | PCR reaction details updated to match G-FISHER protocol |
 
 ### Acronyms and Abbreviations
 
@@ -184,11 +185,11 @@ For 96-well Plate:
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| 100-1000 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 10-100 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 0.1-2.5 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 10-100 ul 8-Channel Pipette | Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 0.5-10 uL 8-Channel Pipette |Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
+| 100-1000 µL Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
+| 10-100 µL Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
+| 0.1-2.5 µL Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
+| 10-100 µL 8-Channel Pipette | Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
+| 0.5-10 µL 8-Channel Pipette |Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | Thermal cycler | Mastercycler Nexus Thermal Cycler | Eppendorf | 1 | Can be substituted with generic |
 | Microwave | Generic Microwave | Generic Brand | 1 | |
 | Flask | 500 mL Flask | Generic Brand | 1 | Used for mixing agarose gel solution |
@@ -202,9 +203,10 @@ For 96-well Plate:
 | PCR Plate Seal | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 2 | Can be substituted with generic, can use tightly-fitted strip caps in place of seal |
 | 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 | (box) Can be substituted with generic |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 2 | (boxes) Can be substituted with generic |
-| 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 2 | (boxes) Can be substituted with generic |
-| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 1.2 | (mL) |
-| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.912 | (mL) |
+| 10 µL Filter tips | TipOne Pipette Tips, 10 µL | TipOne | 2 | (boxes) Can be substituted with generic |
+| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 0.6 | (mL) |
+| BSA | Bovine Serum Albumin | Thermo Fisher | 0.1 | (mL) Stock concentration 0.08 mg/mL |
+| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.26 | (mL) |
 | Forward Primer - 12S MiFish F| 12S MiFish_U F Fluidigm V2 | IDT | 105 | (ul (10uM)) Primer must be diluted from 100uM stocks to 10uM |
 | Reverse Primer - 12S MiFish R | 12S MiFish_U R Fluidigm | IDT | 105 | (ul (10uM)) Primer must be diluted from 100uM stocks to 10uM |
 | TBE Buffer (10x) | TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure | Thermo Scientific | 100 | (uL) |
@@ -236,25 +238,26 @@ For 96-well Plate:
 
 #### Preparation
 
-1. Dilute primers from 100 uM to 10 uM if not already at 10uM.
+1. Dilute primers from 100 µM to 10 µM if not already at 10uM.
 2. Set up PCR under hood by wiping off all surfaces, pipettes, and racks with RNase AWAY and UV sterilizing for 5-10 mins.
 3. Map out order of samples on 96-well PCR plate. Make sure to leave a space for a no template control (NTC) and positive control.
 
 #### PCR
 
-1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
+1. Make PCR master mix and add 12 µL to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
 
-- 12.5 ul [AmpliTaq Gold 360 Master Mix](commercial_mm)
-- 9.5 ul molecular water
-- 1 ul Fwd primer (10 μM) - [12S MiFish_U F Fluidigm V2](pcr_primer_name_forward)
-- 1 ul Rev primer (10 μM) - [12S MiFish_U R Fluidigm](pcr_primer_name_reverse)
+- 6.25 µL [AmpliTaq Gold 360 Master Mix](commercial_mm)
+- 2.71 µL molecular water
+- 1.04 µL BSA (0.08 mg/mL; 0.0064 mg/mL final)
+- 1 µL Fwd primer (10 μM; 0.77 μM final) - [12S MiFish_U F Fluidigm V2](pcr_primer_name_forward)
+- 1 µL Rev primer (10 μM; 0.77 μM final) - [12S MiFish_U R Fluidigm](pcr_primer_name_reverse)
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- |----|----|
 | 12S MiFish F V2 | forward | [GCCGGTAAAACTCGTGCCAGC](pcr_primer_forward) | ACACTGACGACATGGTTCTACA xxx [GCCGGTAAAACTCGTGCCAGC](pcr_primer_forward) | CS1-TS-F |
 | 12S MiFish R | reverse | [CATAGTGGGGTATCTAATCCCAGTTTG](pcr_primer_reverse) | TACGGTAGCAGAGACTTGGTCT xxx [CATAGTGGGGTATCTAATCCCAGTTTG](pcr_primer_reverse) | CS2-TS-R |
 
-2. Add 1 ul of sample DNA (or molecular water for NTC) to respective triplicate wells for a total reaction volume of [25](amplificationReactionVolume) ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
+2. Add 1 µL of sample DNA (or molecular water for NTC) to respective triplicate wells for a total reaction volume of [13](amplificationReactionVolume) µL per well. Pipette up and down or vortex to fully distribute DNA into master mix.
 3. Seal plate with PCR plate seal or strip caps.
 4. Load plate onto thermal cycler and select "MBARI 12S Touchdown" program to run the following steps:
 
@@ -280,22 +283,22 @@ Following PCR amplification, pool triplicate PCR products then run through 2% ag
 2. For a 5.5in x 5.5in gel tray, mix 200 ml of TBE buffer (1x) and 4 g of agarose in a flask. Use scale to weigh agarose.
 3. Microwave mixture for 1 minute, followed by 15-30 second intervals. Watch carefully after 1 minute - mixture can bubble out of flask! The agarose should be fully dissolved so that the solution is mostly clear. Wear a protective glove when handling flask as the mixture will be hot.
 4. Allow for gel mixture to cool in flask for 5-10 min. While cooling, set up gel tray (5.5in x 5.5in) in gel box. Make sure the tray is oriented properly and sealed tight for gel pouring. Add two gel combs for 20 wells each lane - total of 40 wells.
-5. Once cooled to 50°C, add 20 ul of SYBR safe to the mixture and swirl the flask gently to mix (don't create bubbles!). SYBR safe is light sensitive so after adding to mixture, immediately close the vial and store in the dark.
+5. Once cooled to 50°C, add 20 µL of SYBR safe to the mixture and swirl the flask gently to mix (don't create bubbles!). SYBR safe is light sensitive so after adding to mixture, immediately close the vial and store in the dark.
 6. Pour the gel mixture and remove any bubbles using a pipette tip.
 7. Allow gel to set for 30-45 min.
 8. Cut large strips of parafilm or use 8-strip tubes and label each sample as a position on the parafilm/tubes.
-9. Pipette 1 ul of blue loading dye onto each sample position or into each tube.
-10. Pipette 5 ul of DNA sample into loading dye and pipette to mix 2-3 times.
+9. Pipette 1 µL of blue loading dye onto each sample position or into each tube.
+10. Pipette 5 µL of DNA sample into loading dye and pipette to mix 2-3 times.
 11. Once the gel is set, fill the gel box with enough TBE buffer (1x) to fully submerge the gel beneath ~1cm of buffer.
-12. Carefully add samples (6 ul each) to gel and write down their positions.
-13. Add 6 ul of ladder dye (green) to gel.
+12. Carefully add samples (6 µL each) to gel and write down their positions.
+13. Add 6 µL of ladder dye (green) to gel.
 14. Run gel at 100 V for 40-50 min then visualize on gel reader machine.
 
 (OPTIONAL) Purify PCR products using AMPure beads protocol (optimized for Opentrons)
 1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - <https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>).
 2. Adjust bead ratio: 1.2x beads to sample volume for 12S.
 3. Will need magnetic plate and fresh 70% ethanol.
-4. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
+4. End product will be ~40 µL of cleaned DNA eluted in molecular grade water.
 
 (OPTIONAL) Run Qubit on final PCR Products
 1. Follow manufacturer protocol for running Qubit: <https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>.
@@ -304,7 +307,7 @@ Following PCR amplification, pool triplicate PCR products then run through 2% ag
 1. Follow along with previous gel instructions.
 
 #### Sequencing Preparation
-1. After performing a gel on the PCR products, pipette 10 uL of each sample into their respective wells of a new 96-well PCR plate.
+1. After performing a gel on the PCR products, pipette 10 µL of each sample into their respective wells of a new 96-well PCR plate.
     - Leave well H12 empty for Michigan State's sequencing negative control
 3. Seal plate, label with ID and place in freezer till day of shipping.
 4. Fill out Illumina Sample Submission form with sample information and 96-well plate format.
