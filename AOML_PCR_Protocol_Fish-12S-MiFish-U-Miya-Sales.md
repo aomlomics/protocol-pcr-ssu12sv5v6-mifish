@@ -26,7 +26,7 @@ maturity level: mature
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
 amplificationReactionVolume: 25
-assay_name: Fish-12S-MiFish-Miya-Wangensteen
+assay_name: Fish-12S-MiFish-U-Miya-Sales
 assay_validation: not provided
 targetTaxonomicAssay: Actinopterygii
 targetTaxonomicScope: "Also captures non-target: Vertebrates, bacteria"
@@ -72,7 +72,7 @@ pcr2_method_additional: not applicable
 
 ---
 
-# NOAA/AOML PCR Protocol 12S rRNA MiFish (Miya-Wangensteen)
+# NOAA/AOML PCR Protocol 12S rRNA MiFish-U (Miya-Sales)
 
 ## PROTOCOL INFORMATION
 
@@ -125,6 +125,7 @@ pcr2_method_additional: not applicable
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML front matter |
 | 1.1.1 | 2024-12-15 | Updated YAML front matter |
+| 1.1.2 | 2026-03-30 | Updated assay name |
 
 ### Acronyms and Abbreviations
 
