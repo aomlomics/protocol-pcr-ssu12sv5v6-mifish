@@ -1,4 +1,5 @@
 ---
+
 # MIOP terms
 methodology_category: omics analysis
 project: "NOAA Atlantic Oceanographic and Meteorological Laboratory Omics Program; https://github.com/aomlomics/protocols; https://zenodo.org/communities/aomlomics"
@@ -72,7 +73,7 @@ pcr2_method_additional: not applicable
 
 ---
 
-# NOAA/AOML PCR Protocol 12S rRNA MiFish-U (Miya-Sales)
+# NOAA/AOML PCR Protocol 12S rRNA MiFish-U (Miya-Sales) - MBARI/SEAMAP
 
 ## PROTOCOL INFORMATION
 
